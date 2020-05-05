@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane4" prefHeight="691.0" prefWidth="1072.0" style="-fx-background-color: #030307; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BankController">
+   <children>
+      <VBox layoutX="167.0" layoutY="12.0" prefHeight="104.0" prefWidth="887.0" style="-fx-background-radius: 10;" styleClass="linear-grad" stylesheets="@application.css">
+         <children>
+            <Label alignment="CENTER" prefHeight="70.0" prefWidth="535.0" text="ACCOUNT INFO" textFill="#fefffd">
+               <font>
+                  <Font name="Bell MT" size="46.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="160.0" top="23.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="11.0" layoutY="10.0" prefHeight="109.0" prefWidth="141.0" style="-fx-background-color: #000000; -fx-background-radius: 10;">
+         <children>
+            <ImageView fitHeight="104.0" fitWidth="130.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../../../athleticsutsa340.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets left="8.0" top="5.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="17.0" layoutY="129.0" prefHeight="556.0" prefWidth="1039.0" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+         <children>
+            <VBox layoutX="109.0" layoutY="15.0" prefHeight="518.0" prefWidth="375.0" style="-fx-background-color: #202040; -fx-background-radius: 10;">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="2.0" prefWidth="160.0" text="Choose item to view stock" textFill="#fff7f7">
+                     <font>
+                        <Font name="Arial" size="11.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handle2Screen" prefHeight="79.0" prefWidth="385.0" style="-fx-background-radius: 10;" styleClass="button3" stylesheets="@application.css" text="Home Exit" textFill="#a868a6">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="47.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="27.0" layoutY="130.0" prefHeight="565.0" prefWidth="1028.0" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+         <children>
+            <VBox fx:id="vb" layoutX="109.0" layoutY="15.0" prefHeight="518.0" prefWidth="375.0" style="-fx-background-color: #000000; -fx-background-radius: 10;">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="15.0" prefWidth="189.0" text="Choose a club to view amount" textFill="#fff7f7">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ListView fx:id="listview" prefHeight="165.0" prefWidth="365.0" style="-fx-background-radius: 10;">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <StackPane prefHeight="69.0" prefWidth="395.0">
+                     <children>
+                        <Button fx:id="enter" contentDisplay="TOP" lineSpacing="2.0" mnemonicParsing="false" onAction="#saveMe" prefHeight="64.0" prefWidth="363.0" style="-fx-background-radius: 10;" styleClass="linear-grad" stylesheets="@application.css" text="Enter" textFill="ORANGE">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                           <StackPane.margin>
+                              <Insets bottom="20.0" top="5.0" />
+                           </StackPane.margin>
+                        </Button>
+                     </children>
+                  </StackPane>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="2.0" prefWidth="160.0" text="Amount allocated to club" textFill="#fff7f7">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextArea fx:id="textarea" prefHeight="170.0" prefWidth="385.0" style="-fx-background-radius: 20;">
+                     <VBox.margin>
+                        <Insets left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                  </TextArea>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handle2Screen" prefHeight="79.0" prefWidth="385.0" style="-fx-background-radius: 10;" styleClass="button3" stylesheets="@application.css" text="Home Exit" textFill="ORANGE">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane4" prefHeight="691.0" prefWidth="1072.0" style="-fx-background-color: #000000; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AboutController">
+   <children>
+      <VBox layoutX="167.0" layoutY="12.0" prefHeight="104.0" prefWidth="887.0" style="-fx-background-radius: 10;" styleClass="linear-grad" stylesheets="@application.css">
+         <children>
+            <Label alignment="CENTER" prefHeight="70.0" prefWidth="535.0" text="About" textFill="#fefffd">
+               <font>
+                  <Font name="Bell MT" size="46.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="160.0" top="23.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="11.0" layoutY="10.0" prefHeight="109.0" prefWidth="141.0" style="-fx-background-color: #000000; -fx-background-radius: 10;">
+         <children>
+            <ImageView fitHeight="104.0" fitWidth="130.0" pickOnBounds="true" smooth="false">
+               <image>
+                  <Image url="@../../../athleticsutsa340.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets left="8.0" top="5.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+      </VBox>
+      <AnchorPane layoutX="17.0" layoutY="129.0" prefHeight="556.0" prefWidth="1039.0" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+         <children>
+            <VBox layoutX="109.0" layoutY="15.0" prefHeight="518.0" prefWidth="375.0" style="-fx-background-color: #202040; -fx-background-radius: 10;">
+               <children>
+                  <Label alignment="BOTTOM_CENTER" prefHeight="2.0" prefWidth="160.0" text="Choose item to view stock" textFill="#fff7f7">
+                     <font>
+                        <Font name="Arial" size="11.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#handle2Screen" prefHeight="79.0" prefWidth="385.0" style="-fx-background-radius: 10;" styleClass="button3" stylesheets="@application.css" text="Home Exit" textFill="#a868a6">
+                     <font>
+                        <Font name="Arial Bold" size="13.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="47.0" fitWidth="93.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../home.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="5.0" right="5.0" top="10.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="27.0" layoutY="130.0" prefHeight="565.0" prefWidth="1028.0" style="-fx-background-radius: 10; -fx-background-color: #000000;">
+         <children>
+            <Button contentDisplay="TOP" layoutX="439.0" layoutY="401.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#handle2Screen" prefHeight="122.0" prefWidth="130.0" style="-fx-background-radius: 10;" styleClass="button3" stylesheets="@application.css" text="Home Exit" textFill="DARKORANGE">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="394.0" layoutY="64.0" text="Developer of Application:" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="451.0" layoutY="93.0" text="PowerBank" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="437.0" layoutY="326.0" text="Free Joe Exotic" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="385.0" layoutY="358.0" text="Thank for using PowerBank" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="585.0" layoutY="355.0" text="TM" textFill="WHITE">
+               <font>
+                  <Font size="7.0" />
+               </font>
+            </Label>
+            <Circle fill="#8e98a100" layoutX="590.0" layoutY="359.0" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
